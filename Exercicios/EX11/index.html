@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <h1>Imagens diferentes</h1>
+    <p>Tente aumentar e diminuir o tamanho do navegador</p>
+    <picture>
+        <source media="(max-width: 550px)" srcset="img/n300.png" type="image/png">
+        <source media="(max-width: 850px)" srcset="img/n500.png" type="image/png">
+        <img src="img/n800.png" alt="imagem grande">
+    </picture>
+
+    <h1>Mídia</h1>
+    <p>Agora podemos ouvir o som de prontera, Ragnarok.</p>
+    <audio src="midia/08.mp3" controls autoplay></audio>
+    <p>Agora Payon</p>
+    <audio controls>
+        <source src="midia/14.mp3" type="audio/mpeg">
+        <p>Seu navegador não aceita audio em MP3, baixe <a href="midia/14.mp3" download="midia/14.mp3" type="audio/mpeg">Aqui</a></p>
+    </audio>
+
+    <h1>Vídeos</h1>
+    <p>Vamos agora aprender a usar videos em nosso site.</p>
+    <video width="480" height="360" controls>
+        <source src="video/Pexels Videos 2644023.mp4" type="video/mp4">
+    </video>
+
+    <p>Agora pegamos um vídeo de fora, no caso a OP do Fire Force</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JBqxVX_LXvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</html>
